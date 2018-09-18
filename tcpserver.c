@@ -61,7 +61,7 @@ void error(char *msg) {
 
 void verify(char *ss) {
   char buffer[100];
-  strcpy(buffer, ss);        // without checking the actual size of parameter
+  strcpy(buffer, ss);        // what could be wrong here ...
     printf("Verified!\n");   // good place to set breakpoint
 }
 
