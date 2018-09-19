@@ -1,3 +1,5 @@
+
+
 from datetime import date
 from hashlib import sha256
 
@@ -14,5 +16,6 @@ def dyre_dga (num, date_str=None):
 	return '{0}{1}{2}:443'.format(replace_char, hash, tlds[num % len(tlds)])
 
 todays_domains = [dyre_dga(i) for i in xrange (333)]
+
 for i in todays_domains:
 	print i
